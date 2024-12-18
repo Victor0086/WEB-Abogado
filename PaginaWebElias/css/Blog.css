@@ -1,0 +1,262 @@
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    background-color: #f9f9f9; 
+}
+
+a {
+    text-decoration: none;
+    color: #7da2a9; 
+    font-weight: 500;
+}
+
+a:hover {
+    color: #004d52; 
+}
+
+/* Header */
+.header {
+    background-color: #eef5f7; 
+    padding: 10px 20px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.logo img {
+    max-height: 50px;
+    transform: scale(1.5);
+}
+
+.nav-link {
+    color: #7da2a9 !important; 
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #004d52 !important;
+}
+
+.contact-button {
+    background-color: #2d7f8f; 
+    color: white;
+    padding: 10px 25px;
+    border-radius: 0; 
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact-button:hover {
+    background-color: #1c5e68; 
+}
+
+/* Estilos generales para el formulario de comentarios */
+.comment-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.comment-form {
+    background-color: #e8f1f4; /* Color de fondo similar */
+    border: 1px solid #d1e0e5;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group label {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #cdd9de;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #2d7f8f;
+    box-shadow: 0 0 5px rgba(45, 127, 143, 0.5);
+}
+
+.contact-button {
+    background-color: #2d7f8f;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #1c5e68;
+    cursor: pointer;
+}
+
+
+/* Botón del Formulario */
+.submit-button {
+    background-color: #2d7f8f;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #1c5e68;
+}
+
+/* Estilo para mensajes de error debajo de cada campo */
+.text-danger {
+    color: #dc3545; /* Color rojo para errores */
+    font-size: 0.9rem;
+    margin-top: 4px;
+    font-weight: 500;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo para los campos inválidos */
+.form-control.is-invalid {
+    border-color: #dc3545; /* Borde rojo */
+    background-color: #f8d7da; /* Fondo claro rojo */
+    box-shadow: 0 0 5px rgba(220, 53, 69, 0.5); /* Sombra ligera */
+}
+
+/* Mejorar el foco en campos inválidos */
+.form-control.is-invalid:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 8px rgba(220, 53, 69, 0.7);
+}
+
+/* Mantener consistencia en el botón */
+.contact-button {
+    background-color: #2d7f8f;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #1c5e68;
+    cursor: pointer;
+}
+
+
+/* Pie de Página */
+.footer {
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer-title {
+    font-family: 'Roboto', sans-serif;
+    color: #2d7f8f;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #eaf2f4;
+    color: #2d7f8f;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #2d7f8f;
+    color: white;
+}
+
+.footer-logo img {
+    max-height: 80px;
+}
+
+.footer-credits {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.footer-credits .text-danger {
+    color: #dc3545; 
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-size: 24px;
+        color: #333; 
+        line-height: 1.6;
+    }
+
+    .contact-button {
+        background-color: #2d7f8f; 
+        color: white; 
+        padding: 10px 25px;
+        border: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 0; 
+        display: inline-block;
+        text-align: center;
+    }
+
+    .contact-button:hover {
+        background-color: #1c5e68; 
+        color: white;
+    }
+}
+
+

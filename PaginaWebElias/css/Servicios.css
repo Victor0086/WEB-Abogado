@@ -1,0 +1,432 @@
+
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin: 0;
+    background-color: #f9f9f9; 
+}
+
+a {
+    text-decoration: none;
+    color: #7da2a9; 
+    font-weight: 500;
+}
+
+a:hover {
+    color: #004d52; 
+}
+/* Header */
+.header {
+    background-color: #eef5f7; 
+    padding: 10px 20px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.logo img {
+    max-height: 50px;
+    transform: scale(1.5);
+}
+
+.nav-link {
+    color: #7da2a9 !important; 
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #004d52 !important;
+}
+
+.contact-button {
+    background-color: #2d7f8f; 
+    color: white;
+    padding: 10px 25px;
+    border-radius: 0; 
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.contact-button:hover {
+    background-color: #1c5e68; /* Color de hover ligeramente más oscuro */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none; /* Inicialmente oculto */
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    min-width: 240px;
+}
+
+/* Mostrar dropdown al pasar el mouse */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+/* Ícono combinado de teléfono y sobre */
+.combined-icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #2d7f8f; /* Color del icono */
+    font-size: 1.5rem; /* Tamaño del icono */
+}
+
+.combined-icon i {
+    display: inline-block;
+    line-height: 1;
+}
+
+/* Flecha pequeña */
+.fa-caret-down {
+    color: #2d7f8f;
+    font-size: 1rem;
+}
+
+/* Iconos dentro del dropdown */
+.contact-icon {
+    font-size: 1.5rem;
+    color: #2d7f8f;
+}
+
+.contact-icon-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: 5px;
+    content: "\f107"; /* Flecha pequeña */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: #2d7f8f;
+    pointer-events: none; 
+}
+
+.dropdown-menu p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.dropdown-menu a {
+    color: #2d7f8f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.dropdown-menu a:hover {
+    text-decoration: underline;
+    color: #1c5e68;
+}
+
+/* Sección Servicios */
+.services-section {
+    background-color: #f9f9f9; /* Color de fondo */
+    color: #333;
+}
+
+.services-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #1d2d50; /* Azul oscuro */
+}
+
+.services-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #7a869a; /* Gris suave */
+}
+
+.services-description {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #4b4b4b;
+}
+
+.btn-services {
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    color: #1d2d50; /* Color de texto */
+    text-decoration: none;
+    border: 2px solid #1d2d50;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.btn-services i {
+    font-size: 20px; /* Tamaño del ícono */
+}
+
+.btn-services:hover {
+    background-color: #1d2d50;
+    color: #fff; /* Texto blanco al pasar el mouse */
+    transition: all 0.3s ease;
+}
+
+
+/* Sección Contacto */
+.contact-section {
+    background-color: #f4f4f4; /* Color de fondo general */
+    padding: 0;
+}
+
+.contact-text {
+    background-color: #e5e8eb; /* Color gris claro */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-title {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: #333;
+    font-size: 2.2rem;
+    text-decoration: underline;
+}
+
+.contact-description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: #666;
+}
+
+.contact-form {
+    background-color: #eaf2f4; /* Color celeste claro */
+}
+
+.form-label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.form-control {
+    border: 1px solid #2d7f8f;
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+    padding: 10px;
+}
+
+.form-control:focus {
+    border-color: #1c5e68;
+    box-shadow: 0 0 0 2px rgba(45, 127, 143, 0.2);
+}
+
+textarea.form-control {
+    resize: none;
+}
+
+.btn-submit {
+    background-color: #2d7f8f;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn-submit:hover {
+    background-color: #1c5e68;
+    color: white;
+}
+
+
+
+
+/* Servicios Section */
+.services {
+    background-color: #e5e8eb; /* Color de fondo */
+    padding: 60px 20px;
+}
+
+.services-title {
+    font-family: 'Playfair Display', serif; /* Fuente elegante */
+    font-style: italic;
+    font-size: 48px;
+    color: #4b4b4b;
+}
+
+.services-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.service-heading {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2d7f8f; /* Color azul principal */
+    margin-bottom: 15px;
+}
+
+.service-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.services img {
+    border-radius: 8px; /* Bordes redondeados para imágenes */
+    max-height: 180px;
+    object-fit: cover;
+}
+
+/* Responsive Ajustes */
+@media (max-width: 768px) {
+    .service-heading {
+        font-size: 18px;
+    }
+
+    .service-text {
+        font-size: 14px;
+    }
+}
+
+/* Efecto Hover en Imágenes de Servicios */
+.services img {
+    transition: transform 0.3s ease-in-out; /* Efecto suave de transición */
+}
+
+.services img:hover {
+    transform: translateY(-10px); /* Efecto hover para levantar la imagen */
+}
+
+
+/* Contenedor de columna con altura uniforme */
+.service-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Asegura altura completa */
+}
+
+/* Contenedor del botón */
+.service-btn {
+    margin-top: auto; /* Empuja el botón hacia abajo */
+    text-align: center; /* Centra el botón horizontalmente */
+}
+
+.service-btn .contact-button {
+    display: inline-block; /* Mantiene el botón en línea */
+}
+
+
+
+
+
+/* Pie de Página */
+.footer {
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer-title {
+    font-family: 'Roboto', sans-serif;
+    color: #2d7f8f;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #eaf2f4;
+    color: #2d7f8f;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #2d7f8f;
+    color: white;
+}
+
+.footer-logo img {
+    max-height: 80px;
+}
+
+.footer-credits {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.footer-credits .text-danger {
+    color: #dc3545; /* Color rojo para el corazón */
+}
+
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-size: 24px;
+        color: #333; 
+        line-height: 1.6;
+    }
+
+    /* Botón de Contacto */
+    .contact-button {
+        background-color: #2d7f8f; 
+        color: white; 
+        padding: 10px 25px;
+        border: none;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 0; 
+        display: inline-block;
+        text-align: center;
+    }
+
+    .contact-button:hover {
+        background-color: #1c5e68; /* Color de hover */
+        color: white;
+    }
+
+
+}
